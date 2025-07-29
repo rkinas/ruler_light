@@ -16,7 +16,7 @@
 # container: docker.io/cphsieh/ruler:0.1.0
 # bash run.sh MODEL_NAME BENCHMARK_NAME
 
-if [ $# -ne 3 ]; then
+if [ $# -ne 4 ]; then
     echo "Usage: $0 <model_name> $1 <model_dir> $2 <benchmark_name> $3 <gpus>"
     exit 1
 fi
@@ -81,9 +81,6 @@ elif [ "$MODEL_FRAMEWORK" == "sglang" ]; then
         &
     # use sglang/test/killall_sglang.sh to kill sglang server if it hangs
 fi
-
-# wait for server to start
-sleep 120
 
 total_time=0
 for MAX_SEQ_LENGTH in "${SEQ_LENGTHS[@]}"; do
