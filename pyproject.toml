@@ -3,7 +3,7 @@ name = "scripts"
 version = "0.1.0"
 description = "RULER light"
 readme = "README.md"
-requires-python = "==3.10"
+requires-python = "==3.10.*"
 dependencies = [
     "bs4>=0.0.2",
     "fastapi>=0.116.1",
