@@ -16,7 +16,7 @@
 # container: docker.io/cphsieh/ruler:0.1.0
 # bash run.sh MODEL_NAME BENCHMARK_NAME
 
-if [ $# -ne 2 ]; then
+if [ $# -ne 3 ]; then
     echo "Usage: $0 <model_name> $1 <model_path> $2 <benchmark_name>"
     exit 1
 fi
