@@ -1,0 +1,18 @@
+[project]
+name = "scripts"
+version = "0.1.0"
+description = "RULER light"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "bs4>=0.0.2",
+    "fastapi>=0.116.1",
+    "html2text>=2025.4.15",
+    "lhotse>=1.30.3",
+    "nltk>=3.9.1",
+    "pandas>=2.3.1",
+    "tenacity>=9.1.2",
+    "uvicorn>=0.35.0",
+    "vllm>=0.9.2",
+    "wonderwords>=2.2.0",
+]
